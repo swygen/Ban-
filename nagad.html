@@ -139,7 +139,7 @@
     </div>
   </div>
 
-  <div class="amount" id="amountDisplay">৳ 100</div>
+  <div class="amount" id="amountDisplay">৳ 250</div>
 
   <div class="section">
     <label>ট্রানজেকশন আইডি দিন</label>
@@ -153,7 +153,7 @@
         <span id="bkashNumber">01855966005</span>
         <button onclick="copyNumber()">Copy</button>
       </div>
-      <li>টাকার পরিমাণ: <span class="highlight" id="amountText">100</span></li>
+      <li>টাকার পরিমাণ: <span class="highlight" id="amountText">250</span></li>
       <li>PIN দিয়ে নিশ্চিত করুন।</li>
       <li>সব ঠিক থাকলে আপনি Nagad থেকে কনফার্মেশন পাবেন।</li>
       <li>তারপর উপরের ট্রানজেকশন আইডি দিন ও নিচের <b>VERIFY</b> বাটনে ক্লিক করুন।</li>
@@ -181,7 +181,7 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
-  const amount = '100';
+  const amount = '250';
   document.getElementById('amountDisplay').innerText = `৳ ${amount}`;
   document.getElementById('amountText').innerText = `৳ ${amount}`;
   const invoiceId = 'NAG' + Math.random().toString(36).substring(2, 10).toUpperCase();
